@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'galeria',
     'contacto',
     'servicios',
+    'cotizacion',
 ]
 
 MIDDLEWARE = [
@@ -58,7 +59,7 @@ ROOT_URLCONF = 'geoverticalChile.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/home/roadluck/Desktop/backEnd/geoverticalChile/core/templates'],
+        'DIRS': [os.path.join(BASE_DIR,'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
